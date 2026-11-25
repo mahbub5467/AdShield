@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blocked by AdShield</title>
+<style>
+  :root { color-scheme: light dark; --bg:#EEF1F5; --ink:#0E1A2B; --muted:#5A687A; --on:#0B7A5E; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0E1622; --ink:#E8EEF6; --muted:#93A1B5; --on:#34C79D; } }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); color:var(--ink);
+         font: 16px/1.5 ui-sans-serif, system-ui, "Segoe UI", "Noto Sans Bengali", sans-serif; }
+  main { max-width: 30rem; padding: 2rem; }
+  h1 { font-size: 1.75rem; margin: 0 0 .5rem; letter-spacing: -0.01em; }
+  p { color: var(--muted); margin: 0 0 1.5rem; }
+  button { font: inherit; font-weight: 600; padding: .6rem 1.1rem; border-radius: 8px; border: 2px solid var(--on);
+           background: transparent; color: var(--on); cursor: pointer; }
+  button:focus-visible { outline: 3px solid var(--on); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AdShield blocked this page</h1>
+  <p>This address is on the list of known ad-redirect or malicious domains.</p>
+  <button id="back" type="button">Go back</button>
+</main>
+<script src="blocked.js"></script>
+</body>
+</html>
