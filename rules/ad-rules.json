@@ -1,0 +1,284 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "doubleclick.net",
+        "googlesyndication.com",
+        "googleadservices.com",
+        "adservice.google.com",
+        "adnxs.com",
+        "pubmatic.com",
+        "rubiconproject.com",
+        "openx.net",
+        "casalemedia.com",
+        "criteo.com",
+        "criteo.net",
+        "taboola.com",
+        "outbrain.com",
+        "mgid.com",
+        "revcontent.com",
+        "amazon-adsystem.com",
+        "media.net",
+        "adsrvr.org",
+        "advertising.com",
+        "smartadserver.com",
+        "yieldmo.com",
+        "sharethrough.com",
+        "indexww.com",
+        "bidswitch.net",
+        "contextweb.com",
+        "lijit.com",
+        "adform.net"
+      ],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "fwmrm.net",
+        "spotxchange.com",
+        "springserve.com",
+        "teads.tv",
+        "adaptv.advertising.com",
+        "innovid.com",
+        "serving-sys.com"
+      ],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "google-analytics.com",
+        "scorecardresearch.com",
+        "quantserve.com",
+        "quantcount.com",
+        "chartbeat.net",
+        "krxd.net",
+        "bluekai.com",
+        "demdex.net",
+        "everesttech.net",
+        "omtrdc.net",
+        "adsymptotic.com",
+        "bat.bing.com"
+      ],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "popads.net",
+        "popcash.net",
+        "propellerads.com",
+        "onclickads.net",
+        "clickadu.com",
+        "hilltopads.net",
+        "exoclick.com",
+        "adcash.com",
+        "juicyads.com",
+        "adsterra.com"
+      ],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "adcolony.com",
+        "applovin.com",
+        "ironsrc.com",
+        "vungle.com",
+        "inmobi.com",
+        "chartboost.com",
+        "smaato.net",
+        "loopme.com",
+        "moloco.com"
+      ],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||connect.facebook.net/*/fbevents.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||facebook.com/tr",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "ping",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/pages/blocked.html"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "popads.net",
+        "popcash.net",
+        "propellerads.com",
+        "onclickads.net",
+        "clickadu.com",
+        "hilltopads.net",
+        "exoclick.com",
+        "adcash.com",
+        "juicyads.com",
+        "adsterra.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/pagead/",
+      "initiatorDomains": [
+        "youtube.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/api/stats/ads",
+      "initiatorDomains": [
+        "youtube.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest",
+        "ping",
+        "image",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/get_midroll_info",
+      "initiatorDomains": [
+        "youtube.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest",
+        "other"
+      ]
+    }
+  }
+]
